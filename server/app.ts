@@ -14,6 +14,7 @@ import {
   persistWebhook,
   completeOAuth,
 } from "./services/meta.js";
+import { workerTick } from "./services/worker.js";
 export function createApp() {
   const app = express();
   app.disable("x-powered-by");
@@ -49,6 +50,7 @@ export function createApp() {
         throw new AppError(400, "INVALID_JSON", "Invalid JSON.");
       }
       await persistWebhook(payload);
+      if (process.env.VERCEL) await workerTick();
       res.sendStatus(200);
     },
   );

@@ -21,6 +21,7 @@ import {
 import { aiService } from "./services/ai/ai.service.js";
 import { oauthUrl } from "./services/meta.js";
 import { checkModel } from "./services/ai/providers/openai.provider.js";
+import { workerTick } from "./services/worker.js";
 export const api = Router();
 api.use(authenticate);
 api.get("/dashboard", async (_req, res) => {
@@ -167,6 +168,7 @@ api.post("/conversations/:id/messages", async (req, res) => {
       "SEND_BLOCKED",
       "This conversation cannot receive messages.",
     );
+  if (process.env.VERCEL) await workerTick();
   res.status(202).json({ queued: true });
 });
 api.get("/ai/usage", requireAdmin, async (_req, res) =>
