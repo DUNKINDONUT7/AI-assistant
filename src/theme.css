@@ -1,0 +1,815 @@
+/* Relay's feminine adaptation of the installed Uber design system. */
+:root {
+  --purple: #a24165;
+  --purple-dark: #85304f;
+  --muted: #82747d;
+  --border: #eddee5;
+  --radius: 16px;
+  background: #fcf9fa;
+  color: #3b2d35;
+}
+.app-shell {
+  background: #fcf9fa;
+}
+.sidebar {
+  border-right-color: #eee0e7;
+}
+.topbar {
+  border-bottom-color: #eee2e8;
+}
+.brand-mark {
+  background: #a9486a;
+}
+.brand-dot {
+  color: #bb6b89;
+}
+.nav-item.active {
+  background: #f8e9ef;
+  color: #9b3e60;
+}
+.nav-item:hover {
+  background: #fbf1f5;
+  color: #95405e;
+}
+.nav-count {
+  background: #efd5e0;
+  color: #9a4463;
+}
+.nav-new {
+  background: #f9eaf0;
+  color: #a45e79;
+  border-color: #efd9e3;
+}
+.nav-label {
+  color: #8e7b85;
+}
+.nav-item {
+  font-size: 12px;
+  color: #756671;
+}
+.workspace-picker strong,
+.profile strong {
+  font-size: 12px;
+}
+.workspace-picker small,
+.profile small {
+  font-size: 10px;
+}
+.workspace-picker {
+  background: #fffafc;
+  border-color: #eddfe6;
+}
+.plan-card {
+  background: #fcf1f6;
+  border-color: #efdae4;
+}
+.plan-card strong {
+  font-size: 11px;
+  color: #765568;
+}
+.plan-card p {
+  font-size: 10px;
+  color: #86747e;
+}
+.plan-card button {
+  color: #9c4a6b;
+}
+.help-link {
+  font-size: 11px;
+  color: #83727d;
+}
+.profile {
+  border-color: #eee2e8;
+}
+.button {
+  border-radius: 999px;
+  min-height: 38px;
+  font-size: 11px;
+  padding: 10px 17px;
+}
+.button.primary {
+  background: #a24165;
+  border-color: #a24165;
+}
+.button.primary:hover {
+  background: #85304f;
+}
+.button.secondary {
+  color: #785e6d;
+  border-color: #e6d4de;
+}
+.button.ghost {
+  color: #9f5271;
+}
+.icon-button {
+  border-radius: 999px;
+  color: #8f7684;
+}
+.card {
+  border-radius: 16px;
+  border-color: #ebdfe6;
+  box-shadow: none;
+}
+.hero-banner {
+  background: #f7e7ef;
+  border-color: #eedce6;
+  border-radius: 16px;
+}
+.hero-copy h2 {
+  color: #683b52;
+}
+.hero-copy p {
+  color: #8e6b7e;
+  font-size: 12px;
+}
+.hero-copy button {
+  color: #9b496c;
+  font-size: 11px;
+}
+.hero-eyebrow {
+  color: #915772;
+  font-size: 8px;
+}
+.assistant-orb {
+  background: #cd91ad;
+  border-color: #f2d9e6;
+  color: #fff3f9;
+}
+.hero-art .orb {
+  opacity: 0.5;
+}
+.floating-card {
+  background: #fffafbcc;
+  color: #91617a;
+}
+.question-card,
+.answer-card {
+  font-size: 10px;
+}
+.answer-card small {
+  font-size: 8px;
+  color: #9d738a;
+}
+.mini-bot {
+  background: #f3e2ec;
+  border-color: #e6cddd;
+  color: #aa6e8c;
+}
+.page-heading p {
+  font-size: 12px;
+  color: #82707d;
+}
+.page-heading h1 {
+  color: #49343f;
+  font-size: 28px;
+}
+.card-heading h2 {
+  font-size: 14px;
+  color: #664c5d;
+}
+.card-heading p {
+  font-size: 10px;
+  color: #8d7785;
+}
+.section-heading h2 {
+  font-size: 15px;
+  color: #674c5d;
+}
+.muted-label {
+  font-size: 10px;
+  color: #8d7886;
+}
+.stat-top {
+  font-size: 11px;
+  color: #806b7a;
+}
+.stat-middle > strong {
+  color: #624858;
+}
+.stat-bottom {
+  font-size: 9px;
+  color: #8f7d88;
+  white-space: normal;
+}
+.stat-change {
+  font-size: 9px;
+}
+.stat-icon.purple,
+.action-icon.purple {
+  background: #f7e8f0;
+  color: #b57496;
+}
+.stat-icon.mint,
+.action-icon.mint {
+  background: #ecf3ef;
+  color: #749783;
+}
+.stat-icon.peach,
+.action-icon.peach {
+  background: #faf0e7;
+  color: #ba977a;
+}
+.stat-icon.rose,
+.action-icon.rose {
+  background: #faeaf0;
+  color: #bc8198;
+}
+.stat-card {
+  border-radius: 16px;
+  border-color: #eddee6;
+}
+.chart-legend {
+  font-size: 10px;
+  color: #8b7583;
+}
+.legend-purple {
+  background: #a7577b;
+}
+.legend-lilac {
+  background: #d3a5bc;
+}
+.axis-text {
+  fill: #967e8f;
+  font-size: 10px;
+}
+.badge {
+  border-radius: 999px;
+  font-size: 9px;
+  padding: 5px 8px;
+}
+.badge.purple {
+  background: #f7e6ef;
+  color: #975171;
+}
+.badge.green {
+  background: #eaf5ed;
+  color: #507963;
+}
+.badge.orange {
+  background: #fff1e2;
+  color: #997044;
+}
+.badge.gray {
+  background: #f2edf1;
+  color: #7f6e7b;
+}
+.assistant-score strong {
+  font-size: 12px;
+  color: #77566d;
+}
+.assistant-score p {
+  font-size: 10px;
+  color: #94798b;
+}
+.score-orbit {
+  background: #f6e5ef;
+  border-color: #e8d0df;
+  color: #b17b99;
+}
+.ai-work-stat {
+  font-size: 11px;
+  color: #8e7286;
+}
+.ai-work-stat strong {
+  font-size: 12px;
+  color: #805970;
+}
+.subtle-unit {
+  font-size: 9px;
+  color: #927a89;
+}
+.source-check {
+  font-size: 9px;
+  color: #60846c;
+}
+.ai-tip {
+  background: #fcf6fa;
+  border-color: #eee0e9;
+}
+.ai-tip p,
+.ai-tip button {
+  font-size: 9px;
+  color: #97798d;
+}
+.assistant-card > .button {
+  font-size: 10px;
+  color: #93647f;
+}
+.text-link {
+  font-size: 10px;
+  color: #a26988;
+}
+.quick-actions > p {
+  font-size: 10px;
+  color: #8e7686;
+}
+.quick-actions strong {
+  font-size: 11px;
+  color: #806075;
+}
+.quick-actions small {
+  font-size: 9px;
+  color: #967d8e;
+}
+.conversation-table-head {
+  font-size: 10px;
+  color: #8d7484;
+}
+.conversation-table-head .select-wrap select {
+  font-size: 9px;
+  color: #8d7184;
+}
+.customer-cell strong {
+  font-size: 10px;
+  color: #7c5e71;
+}
+.customer-cell small {
+  font-size: 8px;
+  color: #957889;
+}
+.message-preview {
+  font-size: 10px;
+  color: #94798b;
+}
+.conversation-table-row > .badge {
+  font-size: 8px;
+}
+.table-time {
+  font-size: 9px;
+  color: #957e8d;
+}
+.table-time svg {
+  width: 12px;
+}
+.footer {
+  font-size: 9px;
+  color: #927c8b;
+}
+.date-button {
+  font-size: 10px;
+  color: #897082;
+}
+.breadcrumb {
+  font-size: 11px;
+}
+.search-trigger {
+  font-size: 11px;
+  color: #8c7284;
+}
+.breadcrumb strong {
+  color: #725166;
+}
+.breadcrumb > span {
+  color: #947d8b;
+}
+.topbar-actions {
+  color: #917484;
+}
+.tabs button.selected {
+  color: #a65077;
+  border-color: #b57897;
+}
+.tabs button {
+  color: #8f7586;
+}
+.toggle.on {
+  background: #b26b8e;
+}
+.settings-form label,
+.modal-form label {
+  color: #86677b;
+}
+.settings-form input,
+.settings-form textarea,
+.settings-form select,
+.modal-form input,
+.modal-form textarea,
+.modal-form select {
+  color: #6f5165;
+  font-size: 12px;
+  border-color: #e7d6e0;
+  min-height: 42px;
+}
+.settings-form small,
+.modal-form small {
+  color: #967f8f;
+}
+.form-section-heading h3 {
+  color: #845d76;
+}
+.form-section-heading p {
+  color: #977d8e;
+  font-size: 11px;
+}
+.tone-card.selected {
+  background: #fcf1f7;
+  border-color: #c897b4;
+}
+.tone-card strong {
+  color: #906280;
+}
+.tone-card small {
+  color: #987c8f;
+}
+.test-message p,
+.message-bubble {
+  color: #795b6f;
+  font-size: 12px;
+}
+.test-message > div {
+  background: #f9edf4;
+}
+.test-message.user > div {
+  background: #f1dce8;
+}
+.test-composer button {
+  background: #ad6589;
+  border-radius: 50%;
+}
+.test-composer input {
+  color: #8a617b;
+}
+.test-welcome h3 {
+  color: #9a6484;
+}
+.test-welcome p {
+  color: #967b8e;
+}
+.test-banner,
+.test-footnote {
+  color: #97798e;
+}
+.suggested-prompts button {
+  color: #9b718b;
+  border-radius: 999px;
+}
+.form-note {
+  color: #947889;
+}
+.feature-banner h2 {
+  color: #92627b;
+}
+.feature-banner p {
+  color: #9e8192;
+}
+.automation-card h2,
+.post-body h3,
+.knowledge-row strong {
+  color: #90667f;
+}
+.automation-reply,
+.post-body > p,
+.knowledge-row p {
+  color: #92758a;
+  font-size: 11px;
+}
+.automation-card .muted,
+.automation-footer > span {
+  color: #977c8f;
+}
+.keyword-chips span {
+  color: #9e7891;
+  background: #f7eaf2;
+  border-radius: 999px;
+}
+.channel-card h2,
+.business-profile-heading h2,
+.team-banner h2 {
+  color: #8b607a;
+}
+.channel-card > p,
+.business-profile-heading p,
+.team-banner p {
+  color: #957b8e;
+}
+.connected-account strong,
+.team-row strong {
+  color: #8e657e;
+}
+.connected-account small,
+.team-row small {
+  color: #9c8093;
+}
+.team-row {
+  color: #91748a;
+}
+.login-page {
+  background: #f9edf3;
+}
+.login-card {
+  background: #fffafc;
+  border-color: #f3e4ed;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #8b506611;
+}
+.login-card h1 {
+  color: #78445f;
+}
+.login-card p {
+  color: #937186;
+}
+.login-card label {
+  color: #86657b;
+}
+.login-card input {
+  color: #755166;
+  border-color: #e6cedd;
+}
+.modal-heading h2 {
+  color: #7d4e6c;
+}
+.modal {
+  border-radius: 16px;
+}
+.modal-heading > .icon-button {
+  background: #f8eaf2;
+  color: #a1728f;
+}
+.info-callout p {
+  color: #93778b;
+}
+.info-callout {
+  background: #fcf6fa;
+  border-color: #ebdce7;
+  color: #a78098;
+}
+.thread-item.selected {
+  background: #fcf0f7;
+  border-left-color: #c991b1;
+}
+.thread-item-top strong {
+  color: #8d647f;
+}
+.thread-item p {
+  color: #a08196;
+}
+.thread-status {
+  color: #a67895;
+}
+.conversation-header h2 {
+  color: #845c75;
+}
+.conversation-state {
+  background: #fcf3f9;
+  color: #96728b;
+}
+.conversation-state button {
+  color: #9c6888;
+}
+.message-row.outbound .message-bubble {
+  background: #f3e2ed;
+  color: #936d88;
+}
+.message-meta {
+  color: #9e8095;
+}
+.composer textarea {
+  color: #89617a;
+}
+.composer > div > span {
+  color: #9e8095;
+}
+.customer-details h3 {
+  color: #936881;
+}
+.customer-details dt {
+  color: #a4879a;
+}
+.customer-details dd {
+  color: #896279;
+}
+.security-row h3 {
+  color: #926781;
+}
+.security-row p {
+  color: #9c7f93;
+}
+.knowledge-tip p {
+  color: #947d8e;
+}
+.knowledge-tip strong {
+  color: #875b77;
+}
+.knowledge-count strong {
+  color: #90657f;
+}
+.knowledge-count div > span {
+  color: #a08097;
+}
+.resource-toolbar .tabs button {
+  color: #92758a;
+}
+.knowledge-kind {
+  color: #97768e;
+}
+.analytics-stat > strong {
+  color: #8a607b;
+}
+.analytics-stat > span:not(.action-icon) {
+  color: #9a7b90;
+}
+.usage-table th,
+.usage-table td {
+  color: #906e84;
+}
+.chart-no-data {
+  font-size: 11px;
+  color: #a5849a;
+  background: #fff9fcbb;
+}
+.role-explainer h3 {
+  color: #936f85;
+}
+.role-explainer p {
+  color: #9d8192;
+}
+.settings-nav button.selected {
+  color: #a06785;
+  background: #f6e5ef;
+}
+.settings-nav button {
+  color: #95738a;
+}
+.business-settings > .muted {
+  color: #9b7d90;
+}
+.notification-row p {
+  color: #93677e;
+}
+.toast {
+  color: #87576f;
+  border-color: #e8d1df;
+}
+.tone-card > span {
+  color: #b985a2;
+}
+.button:focus-visible,
+a:focus-visible {
+  outline-color: #dca7c2;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #c491ae;
+  box-shadow: 0 0 0 3px #c491ae15;
+}
+.sidebar .plan-card {
+  box-shadow: none;
+}
+@media (max-width: 700px) {
+  .hero-banner {
+    height: auto;
+    min-height: 250px;
+  }
+  .hero-copy {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .hero-copy h2 {
+    font-size: 25px;
+  }
+  .hero-copy p {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .hero-copy button {
+    margin-top: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-item {
+    font-size: 11px;
+  }
+  .stat-top {
+    font-size: 10px;
+  }
+  .stat-bottom {
+    font-size: 8px;
+  }
+  .message-preview {
+    font-size: 9px;
+  }
+  .card-heading h2 {
+    font-size: 12px;
+  }
+  .card-heading p {
+    font-size: 9px;
+  }
+  .ai-work-stat {
+    font-size: 10px;
+  }
+  .ai-work-stat strong {
+    font-size: 11px;
+  }
+  .table-time {
+    font-size: 8px;
+  }
+  .customer-cell strong {
+    font-size: 9px;
+  }
+  .conversation-table-row > .badge {
+    font-size: 7px;
+  }
+  .quick-actions strong {
+    font-size: 10px;
+  }
+  .quick-actions small {
+    font-size: 8px;
+  }
+  .assistant-score p {
+    font-size: 9px;
+  }
+}
+@media (max-width: 700px) {
+  .nav-item {
+    font-size: 12px;
+  }
+  .page-heading h1 {
+    font-size: 25px;
+  }
+  .page-heading p {
+    font-size: 11px;
+  }
+  .hero-copy p {
+    font-size: 10px;
+    max-width: 207px;
+  }
+  .hero-copy button {
+    font-size: 10px;
+  }
+  .hero-eyebrow {
+    font-size: 6px;
+  }
+  .question-card,
+  .answer-card {
+    font-size: 9px;
+  }
+  .stat-top {
+    font-size: 10px;
+  }
+  .stat-bottom {
+    font-size: 8px;
+  }
+  .card-heading h2 {
+    font-size: 12px;
+  }
+  .card-heading p {
+    font-size: 9px;
+  }
+  .conversation-table-head {
+    font-size: 9px;
+  }
+  .customer-cell strong {
+    font-size: 9px;
+  }
+  .customer-cell small {
+    font-size: 8px;
+  }
+  .message-preview {
+    font-size: 8px;
+  }
+  .conversation-table-row > .badge {
+    font-size: 7px;
+  }
+  .assistant-score strong {
+    font-size: 10px;
+  }
+  .assistant-score p {
+    font-size: 8px;
+  }
+  .ai-work-stat {
+    font-size: 9px;
+  }
+  .ai-work-stat strong {
+    font-size: 10px;
+  }
+  .subtle-unit,
+  .source-check {
+    font-size: 8px;
+  }
+  .ai-tip p,
+  .ai-tip button {
+    font-size: 8px;
+  }
+  .assistant-card > .button {
+    font-size: 9px;
+  }
+  .quick-actions strong {
+    font-size: 11px;
+  }
+  .quick-actions small {
+    font-size: 9px;
+  }
+  .section-heading h2 {
+    font-size: 13px;
+  }
+  .muted-label {
+    font-size: 9px;
+  }
+  .button {
+    font-size: 11px;
+  }
+  .footer {
+    font-size: 8px;
+  }
+}
