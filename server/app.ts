@@ -64,7 +64,11 @@ export function createApp() {
       .map((c) => c.trim())
       .find((c) => c.startsWith("relay_oauth="))
       ?.slice(12);
-    if (cookie !== state)
+    // Local dashboard requests are proxied from localhost while Meta returns
+    // to the public ngrok callback, so the browser cannot carry a localhost
+    // cookie to that callback. The stored 256-bit, single-use state remains
+    // the development CSRF binding; production still requires both values.
+    if (config.NODE_ENV === "production" && cookie !== state)
       throw new AppError(
         403,
         "OAUTH_STATE",
