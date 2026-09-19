@@ -249,7 +249,7 @@ export function oauthUrl(state: string) {
     redirect_uri: `${config.WEBHOOK_BASE_URL}/api/meta/callback`,
     state,
     scope:
-      "pages_show_list,pages_messaging,pages_manage_metadata,pages_read_engagement,pages_manage_posts,instagram_basic,instagram_manage_messages,instagram_content_publish",
+      "pages_show_list,pages_messaging,pages_manage_metadata",
     response_type: "code",
   }).toString();
   return url.toString();
